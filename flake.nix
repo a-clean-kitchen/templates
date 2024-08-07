@@ -15,6 +15,18 @@
           # And ofc `git init`
         '';
       };
+      react = {
+        path = ./react;
+        description = "A React + Vite template for use with Nix";
+        welcomeText = ''
+          # Getting started
+          - Run `nix develop`
+          
+          # Don't forget to change the name of your project in the package.json
+          # And update the dependency hash in the flake.nix
+          # And ofc `git init`
+        '';
+      };
     };
   };
 }
